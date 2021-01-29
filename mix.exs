@@ -26,6 +26,7 @@ defmodule TraderBot.MixProject do
       {:hackney, "~> 1.16"},
       {:jason, "~> 1.2"},
       {:table_rex, "~> 3.0"},
+      {:gen_tcp_accept_and_close, "~> 0.1.0"}
     ]
   end
 end

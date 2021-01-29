@@ -4,9 +4,13 @@ config :trader_bot,
   command_prefix: "!"
 
 config :nostrum,
-  num_shards: :auto # The number of shards you want to run your bot under, or :auto.
+  # The number of shards you want to run your bot under, or :auto.
+  num_shards: :auto
 
 config :tesla, :adapter, Tesla.Adapter.Hackney
+
+config :gen_tcp_accept_and_close, port: 4000
+config :gen_tcp_accept_and_close, ip: {0, 0, 0, 0}
 
 config :logger, :console, format: "$time [$level] $metadata$message\n"
 
